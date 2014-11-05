@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[titie]]></title>
-  <subtitle><![CDATA[subtitle]]></subtitle>
+  <title><![CDATA[Jianfei's Blog]]></title>
+  <subtitle><![CDATA[总是在回头的时候，就能发现美丽的风景]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://lijianfei.github.io/"/>
-  <updated>2014-11-05T08:38:51.432Z</updated>
+  <updated>2014-11-05T09:23:46.464Z</updated>
   <id>http://lijianfei.github.io/</id>
   
   <author>
-    <name><![CDATA[Li Jianfei]]></name>
+    <name><![CDATA[李建飞]]></name>
     <email><![CDATA[jf_lee2008@163.com]]></email>
   </author>
   
