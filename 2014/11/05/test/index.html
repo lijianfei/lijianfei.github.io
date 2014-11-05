@@ -4,18 +4,16 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>titie</title>
+    <title>test | titie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Li Jianfei">
-    
-    <meta name="description" content="description">
     
     
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="jf_lee2008" />
-    <meta name="twitter:title" content="titie" />
+    <meta name="twitter:title" content="test | titie" />
       
     
     
@@ -68,67 +66,66 @@
 
     </header>
     <div id="container">
-      <div id="main">
-
-  <section class="photo" itemscope itemprop="blogPost">
-  
-    <a href="/2014/11/05/test/" title="test" itemprop="url">
-  
-    <h1 itemprop="name">test</h1>
+      <div id="main" class="photo" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
     
-     
-           <p itemprop="description" ></p>
-        
+      <a href="/2014/11/05/test/" title="test" itemprop="url">test</a>
+  </h1>
+  <p class="article-author">By
     
+      <a href="https://plus.google.com/104957192496878520000?rel=author" title="Li Jianfei" target="_blank" itemprop="author">Li Jianfei</a>
+    </p>
+  <p class="article-time">
     <time datetime="2014-11-05T03:22:43.000Z" itemprop="datePublished">11月 5 2014</time>
-  </a>
-</section>
+    更新日期:<time datetime="2014-11-05T03:22:43.000Z" itemprop="dateModified">11月 5 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+		</div>
+		
+		  
+	</div>
+		<footer class="article-footer clearfix">
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2014/11/05/第二篇博客/" title="第二篇博客" itemprop="url">
-  
-    <h1 itemprop="name">第二篇博客</h1>
-    
-     
-           <p itemprop="description" >[title] [] [url] [link text]1234567891011121314151617if (conditionType == 0) {       float minValue = threshold.getMinValue();       float m</p>
-        
-    
-    <time datetime="2014-11-05T03:12:03.000Z" itemprop="datePublished">11月 5 2014</time>
-  </a>
-</section>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2014/11/05/第一篇博客/" title="第一篇博客" itemprop="url">
-  
-    <h1 itemprop="name">第一篇博客</h1>
-    
-     
-           <p itemprop="description" >this is my first posts.
-thx</p>
-        
-    
-    <time datetime="2014-11-05T02:57:43.000Z" itemprop="datePublished">11月 5 2014</time>
-  </a>
-</section>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2014/11/04/hello-world/" title="Hello World" itemprop="url">
-  
-    <h1 itemprop="name">Hello World</h1>
-    
-     
-           <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the </p>
-        
-    
-    <time datetime="2014-11-04T05:56:15.000Z" itemprop="datePublished">11月 4 2014</time>
-  </a>
-</section>
 
+<div class="article-share" id="share">
+
+  <div data-url="http://lijianfei.github.io/2014/11/05/test/" data-title="test | titie" data-tsina="null" class="share clearfix">
+  </div>
 
 </div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2014/11/05/第二篇博客/"  title="第二篇博客">
+ <strong>NEXT:</strong><br/> 
+ <span>第二篇博客
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
 <div id="asidepart">
@@ -223,6 +220,8 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
@@ -239,6 +238,38 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
 });
 </script>
 
